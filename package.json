@@ -1,0 +1,23 @@
+{
+  "name": "krishjs-2.0",
+  "version": "0.1.0",
+  "description": "A profile project in angular 2.0 with typescript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krishjs/ng2-krishjs.git"
+  },
+  "keywords": [
+    "angular2.0",
+    "typescript"
+  ],
+  "author": "krishjs gplakrish@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krishjs/ng2-krishjs/issues"
+  },
+  "homepage": "https://github.com/Krishjs/ng2-krishjs#readme"
+}
