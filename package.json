@@ -2,9 +2,13 @@
   "name": "krishjs-2.0",
   "version": "0.1.0",
   "description": "A profile project in angular 2.0 with typescript",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
@@ -19,5 +23,25 @@
   "bugs": {
     "url": "https://github.com/Krishjs/ng2-krishjs/issues"
   },
-  "homepage": "https://github.com/Krishjs/ng2-krishjs#readme"
+  "homepage": "https://github.com/Krishjs/ng2-krishjs#readme",
+  "dependencies": {
+    "angular2": "2.0.0-beta.12",
+    "systemjs": "0.19.24",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "concurrently": "^2.0.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.1",
+    "gulp-typescript": "^2.8.0",
+    "lite-server": "^2.1.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9"
+  }
 }
